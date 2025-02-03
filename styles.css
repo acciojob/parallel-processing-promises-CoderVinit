@@ -1,1 +1,60 @@
-/*  your css code here. If applicable */
+/* Center content */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Style the button */
+#download-images-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 20px;
+}
+
+#download-images-button:hover {
+    background-color: #0056b3;
+}
+
+/* Loading message */
+.loading {
+    font-size: 18px;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Image container */
+#output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Style images */
+#output img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#output img:hover {
+    transform: scale(1.05);
+}
